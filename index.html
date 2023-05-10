@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SGG115 | Grupo 02 </title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/svg-icons.css">
+</head>
+
+<body>
+    <main role="main">
+		<article id="webslides">
+			<section class="bg-green">
+				<span class="background dark"></span>
+				<div class="wrap aligncenter">
+					<h1>
+					<strong>Sistema de Información Geográfico para la Calidad de Aire en San Salvador.</strong>
+					</h1>
+					<p class="text-symbols">SAGA GIS - GeoServer - PostgreSQL.</p>
+					<p class="text-symbols">Grupo 02.</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50 bg-white">
+					<h2>
+						<strong>Integrantes:</strong>
+					</h2>
+					<hr>
+					<ul>
+						<li>Agreda Lemus, Kevin Alejandro - AA20009</li>
+						<li>Dueñas Figueroa, Francisco Alejandro - DF20007</li>
+						<li>Martínez Argueta, Jason Saúl - MA17092</li>
+						<li>Portillo Ventura, Kevin Enrique - PV17028</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Introducción.</strong></h3>
+					<p>
+						Un Sistema de Información Geográfica es una herramienta informática 
+						que permite capturar, almacenar, analizar y visualizar datos geoespaciales 
+						en un entorno georreferenciado. 
+						El uso de la herramienta SAGA GIS puede ser una buena opción para construir este 
+						tipo de SIG, ya que ofrece diversas funcionalidades para el procesamiento de datos 
+						geoespaciales.
+					</p>
+					<p>
+						Para construir un GIS en SAGA GIS basado en la calidad del aire en el departamento de 
+						San Salvador, se requerirá de la recolección de datos y su posterior integración en el 
+						software, la creación de mapas temáticos y la elaboración de análisis espaciales y 
+						estadísticos para evaluar la calidad del aire y sus impactos en la población y el medio 
+						ambiente.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<div class="grid vertical-align">
+						<div class="column">
+							<h3><strong>Objetivo General:</strong></h3>
+						</div>
+						<div class="column">
+							<p class="text-intro">
+							Determinar las capacidades de SAGA GIS en la construcción de un Sistema de Información Geográfica 
+							(GIS) eficiente y funcional, que permita la integración de PostGIS y GeoServer, utilizando las 
+							herramientas y funcionalidades que ofrece SAGA GIS, con el fin de proporcionar información útil 
+							y relevante para la toma de decisiones en diferentes ámbitos.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50 bg-white">
+					<h4><strong>Objetivos Específicos:</strong></h4>
+					<ol>
+						<li>Identificar las funcionalidades de PostGIS y su integración con SAGA GIS para el manejo y gestión de bases de datos geográficas, incluyendo la creación de capas ráster, polígonos, lineales y puntos.</li>
+						<li>Documentar el proceso de investigación y construcción del GIS, incluyendo la selección y descripción de las herramientas utilizadas, los procedimientos y metodologías aplicados.</li>
+						<li>Desarrollar un prototipo de GIS utilizando SAGA GIS, PostgreSQL y Geo Server, que permita la integración y gestión de datos geográficos para un caso de estudio específico.</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Alcances.</strong></h3>
+					<p>
+						El alcance de este proyecto de investigación y construcción de un GIS en SAGA GIS usando 
+						PostgreSQL y Geo Server es lograr una integración eficiente y funcional de estas herramientas 
+						para la creación de un sistema de información geográfica que permita la gestión y análisis 
+						de datos geoespaciales en diferentes ámbitos, brindando información relevante y útil para 
+						la toma de decisiones. 
+					</p>
+					<p>
+						Además, se buscará comparar estas herramientas con otras de diferente licencia y evaluar 
+						su rendimiento y eficiencia en diferentes casos de uso. 
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Limitaciones.</strong></h3>
+					<p>
+					Se plantean como limitaciones y dificultades en el desarrollo del proyecto, las siguientes 
+					situaciones: en primer lugar, se encuentra la falta de documentación específica y detallada 
+					sobre el uso de la herramienta de software SAGA GIS, lo cual puede restringir el correcto 
+					aprovechamiento de las funcionalidades que esta ofrece. Además, se destaca la falta de opciones 
+					en comparación con otros software más populares y utilizados en la industria, lo que puede 
+					limitar la eficiencia y eficacia del trabajo realizado.
+					</p>
+				</div>
+			</section>
+			<section class="bg-black-blue">
+				<span class="background dark"></span>
+				<div class="wrap aligncenter">
+					<img src="img/SAGA.png" alt="SAGA">
+					<h3><strong>SAGA GIS</strong></h3>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h2>Capacidades.</h2>
+					<hr>
+					<ol class="text-cols">
+						<li>Análisis de datos vectoriales</li>
+						<li>Análisis de cuadrículas e imágenes</li>
+						<li>Geoestadística</li>
+						<li>Clasificación de imágenes</li>
+						<li>Proyecciones</li>
+						<li>Simulación de procesos dinámicos</li>
+						<li>Análisis del terreno</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h2>Capacidades.</h2>
+					<hr>
+					<p>
+						SAGA GIS se encuentra en constante desarrollo desde el Instituto de Geografía en la 
+						Universidad de Hamburgo, con contribuciones de la creciente comunidad mundial live.osgeo.org. 
+						El software está programado en el lenguaje C++ orientado a objetos y admite la implementación 
+						de nuevas funciones a través de una interfaz de programación de aplicaciones (API) muy eficaz.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Ventajas entre QGIS y SAGA GIS.</strong></h3>
+					<p>
+						Tanto SAGA GIS como QGIS son herramientas de software libre para Sistemas de 
+						Información Geográfica (SIG), y ambos ofrecen una variedad de funcionalidades 
+						y características. SAGA GIS es una herramienta poderosa para el análisis y 
+						procesamiento de datos geoespaciales, mientras que QGIS se enfoca en la visualización 
+						y edición de datos, con una comunidad de usuarios más grande y una interfaz más fácil 
+						de usar.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Desventajas entre QGIS y SAGA GIS.</strong></h3>
+					<p>
+						SAGA GIS tiene una curva de aprendizaje más pronunciada que QGIS, ya que algunas de sus 
+						funcionalidades son más avanzadas y técnicas. QGIS tiene una comunidad más grande y activa 
+						de usuarios y desarrolladores que SAGA GIS, lo que significa que hay más actualizaciones y 
+						mejoras disponibles con mayor frecuencia.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Ventajas entre gvSIG y SAGA GIS.</strong></h3>
+					<p>
+						SAGA GIS y gvSIG son dos herramientas de software libre para Sistemas de Información Geográfica 
+						(SIG), y aunque comparten algunas similitudes en términos de funcionalidades, también presentan 
+						algunas diferencias.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Desventajas entre gvSIG y SAGA GIS.</strong></h3>
+					<p>
+						Algunas posibles desventajas de SAGA GIS podrían incluir su interfaz de usuario menos amigable en 
+						comparación con otros SIG, la necesidad de programar en Python para aprovechar completamente su 
+						potencial, y su limitada documentación. Por otro lado, algunas posibles desventajas de gvSIG podrían 
+						incluir su menor velocidad de procesamiento en comparación con otros SIG, su interfaz de usuario más 
+						compleja para usuarios nuevos y su menor número de plugins y herramientas en comparación con otros SIG populares.
+					</p>
+				</div>
+			</section>
+			<section class="bg-black-blue">
+				<span class="background dark"></span>
+				<div class="wrap aligncenter">
+					<img src="img/Geoserver.png" alt="SAGA">
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h2>Capacidades.</h2>
+					<hr>
+					<p>
+						GeoServer es un servidor de código abierto que permite la publicación de datos espaciales en la web 
+						mediante el protocolo OGC (Open Geospatial Consortium). Es capaz de manejar diferentes tipos de datos 
+						espaciales, como capas vectoriales, ráster, datos de teledetección, entre otros.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h2>Capacidades.</h2>
+					<hr>
+					<ol class="text-cols">
+						<li>Publicación de servicios web OGC</li>
+						<li>Integración con bases de datos geoespaciales</li>
+						<li>Personalización de estilos</li>
+						<li>Configuración de seguridad</li>
+						<li>Integración con otras herramientas de software</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h4>Algunos de los beneficios de utilizar GeoServer junto con SAGA GIS son:</h4>
+					<hr>
+					<ol class="text-cols">
+						<li>Interoperabilidad</li>
+						<li>Personalización</li>
+						<li>Escalabilidad</li>
+						<li>Seguridad</li>
+						<li>Flexibidad</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<span class="background dark"></span>
+				<div class="wrap aligncenter">
+					<img src="img/PostgreSQL.png" alt="SAGA">
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h2>Capacidades.</h2>
+					<hr>
+					<p>
+						PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que 
+						ofrece una amplia variedad de capacidades y características para manejar grandes cantidades 
+						de datos de forma eficiente y segura. 
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50">
+					<h4>Algunas de las capacidades generales de PostgreSQL son:</h4>
+					<hr>
+					<ol class="text-cols">
+						<li>Escalabilidad</li>
+						<li>Fiabilidad</li>
+						<li>Seguridad</li>
+						<li>Flexibidad</li>
+						<li>Extensibilidad</li>
+					</ol>
+				</div>
+			</section>
+			<section class="bg-blue">
+				<span class="background dark"></span>
+				<div class="wrap aligncenter">
+					<h1>
+					<strong>Caso de Implementación</strong>
+					</h1>
+					<p class="text-symbols">Sistema de Información Geográfica para la Calidad de Aire en San Salvador</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<div class="grid vertical-align">
+						<div class="column">
+							<h3><strong>Objetivo General:</strong></h3>
+						</div>
+						<div class="column">
+							<p class="text-intro">
+								Analizar la calidad del aire en el departamento de San Salvador mediante la recopilación de datos históricos 
+								y actuales de las estaciones de monitoreo existentes, y su representación gráfica mediante el uso de la herramienta 
+								SAGA GIS, con el fin de proporcionar información detallada y comprensible sobre la contaminación atmosférica a la 
+								población en general.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>			
+			<section>
+				<div class="wrap size-50 bg-white">
+					<h4><strong>Objetivos Específicos:</strong></h4>
+					<ol>
+						<li>Identificar y localizar las áreas críticas de contaminación del aire en el departamento de San Salvador mediante el uso de herramientas de análisis espacial en SAGA GIS.</li>
+						<li>Recopilar y analizar los datos históricos de las estaciones de monitoreo de calidad del aire en San Salvador para evaluar los niveles de contaminación del aire en relación con las normas y estándares nacionales e internacionales de calidad del aire.</li>	
+					</ol>
+				</div>
+			</section>
+			<section>
+				<div class="wrap size-50 bg-white">
+					<h4><strong>Objetivos Específicos:</strong></h4>
+					<ol start="3">
+						<li>Desarrollar mapas temáticos y visualizaciones para presentar los resultados del análisis de la calidad del aire en San Salvador, incluyendo patrones espaciales y temporales de contaminación.</li>
+						<li>Proporcionar información precisa y detallada sobre la calidad del aire en San Salvador a la población en general, para promover la conciencia ambiental y fomentar la adopción de prácticas sostenibles.</li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Alcances.</strong></h3>
+					<p>
+						El proyecto tiene como alcance la utilización de una metodología basada en la recopilación y 
+						análisis de datos geoespaciales de estaciones de monitoreo de calidad del aire en el departamento 
+						de San Salvador. Se utilizarán herramientas de análisis espacial en SAGA GIS para identificar patrones
+						espaciales y temporales de contaminación del aire. Además, se recopilarán datos históricos de estas 
+						estaciones y se evaluarán los niveles de contaminación del aire en relación con las normas y estándares 
+						nacionales e internacionales de calidad del aire. 
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Limitaciones.</strong></h3>
+					<p>
+						A continuación, se presentan las limitaciones del Sistema de Información Geográfico de la Calidad de Aire de San Salvador:
+					</p>
+					<ul>
+						<li>Disponibilidad de datos: la calidad del proyecto dependerá en gran medida de la disponibilidad y calidad de los datos históricos recopilados de las estaciones de monitoreo ambiental en San Salvador.</li>
+						<li>Cobertura espacial: la calidad del proyecto también dependerá de la cobertura espacial de las estaciones de monitoreo en San Salvador.</li>
+						<li>Limitaciones de PostgreSQL y GeoServer: si bien PostgreSQL y GeoServer son herramientas valiosas para la gestión y visualización de datos espaciales, también pueden tener limitaciones en términos de capacidad y escalabilidad.</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Planteamiento del Problema.</strong></h3>
+					<p>
+						El principal problema que se busca abordar es la falta de información y herramientas para el monitoreo 
+						y análisis de la calidad del aire en San Salvador. Aunque existen estaciones de monitoreo distribuidas 
+						en diferentes zonas de la ciudad, la información no está centralizada ni accesible al público de manera 
+						fácil y clara. Además, la información disponible no es siempre actualizada y no se cuenta con una 
+						herramienta que permita la visualización de los datos de manera integrada y fácilmente interpretable.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Descripción del Problema.</strong></h3>
+					<p>
+						Actualmente, el monitoreo de la calidad del aire en San Salvador se lleva a cabo a través de estaciones 
+						de medición de la calidad del aire ubicadas en diferentes puntos de la ciudad. Estas estaciones miden 
+						una serie de contaminantes y generan datos en tiempo real sobre la calidad del aire. Sin embargo, 
+						la gestión y análisis de estos datos es un desafío, ya que no hay un sistema centralizado que permita 
+						la visualización y análisis de los datos en tiempo real.
+					</p>
+				</div>
+			</section>
+			<section>
+				<div class="wrap">
+					<h3><strong>Conclusiones.</strong></h3>
+					<p>
+						En conclusión, el proyecto de Sistema de Información Geográfica (SIG o GIS) para el monitoreo de la calidad 
+						del aire en el departamento de San Salvador, El Salvador, representa una herramienta valiosa para el análisis 
+						y la gestión de la calidad del aire en la región.
+					</p>
+					<p>
+						El uso de herramientas de software libre como SAGA GIS, QGIS y GeoServer permite una mayor accesibilidad y 
+						flexibilidad para los usuarios, lo que facilita el acceso a información crítica de manera eficiente y 
+						efectiva. Además, la integración de diferentes capas como las de calles y carreteras, zonas residenciales 
+						e industriales, municipios y estaciones de calidad del aire, proporciona una visión integral y detallada 
+						de la situación de la calidad del aire en la zona.
+					</p>
+				</div>
+			</section>
+		</article>
+    </main>
+    <script src="js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+    <script defer src="js/svg-icons.js"></script>
+</body>
+</html>
